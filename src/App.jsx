@@ -13,13 +13,14 @@ export const App = () => {
         <>
             <h1 style={{ color: "red" }}> Hello, hello, hello,hello</h1>
             <h1 style={{ color: "#ccffcc" }}> oshiriMaster</h1>
-            < ColoredMessage color="blue" message="お元気ですか" />
-            < ColoredMessage color="pink" message="元気です" />
-            <button onClick={onClickButton}>押せ！！！</button>
-            <br></br>
-            <button onClick={onClickButton}>押すな！！！</button>
-        </>
-    );
+            < ColoredMessage color="blue">お元気ですか</ColoredMessage>
+            < ColoredMessage color="pink">元気です</ColoredMessage>
+
+                <button onClick={onClickButton}>押せ！！！</button>
+                <br></br>
+                <button onClick={onClickButton}>押すな！！！</button>
+            </>
+            );
 };
 
 
