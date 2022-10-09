@@ -11,10 +11,19 @@ export const Emotion = () => {
     display: flex;
     justify-content: space-around;
     align-items: center;
-`
+`;
+
+    //インラインスタイルの書き方
+    const titleStyle = css({
+        //({})内にオブジェクトを書く。インラインスタイル同様、キャメルケースや"文字列"値を記入。
+        margin: 0,
+        color: "#aaa"
+    });
+
+
     return (
         <div css={containerStyle}>
-            <p>これはEmotionの場合。</p>
+            <p css={titleStyle}>これはEmotionの場合。</p>
             <button>ボタン</button>
         </div>
     );
