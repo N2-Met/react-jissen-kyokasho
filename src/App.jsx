@@ -5,6 +5,7 @@ import { CssModules } from "./components/CssModules";
 import { StyledJsx } from "./components/StyledJsx";
 import { StyledComponents } from "./components/StyledComponents";
 import { Emotion } from "./components/Emotion";
+import { TailwindCss } from "./components/TailwindCss";
 
 
 
@@ -36,7 +37,8 @@ export const App = () => {
             <CssModules /> {/* テスト用 CssModulesの場合 */}
             <StyledJsx /> {/*　Styled Jsxの場合 */}
             <StyledComponents /> {/*　StyledComponentsの場合 */}
-            <Emotion /> {/*　StyledComponentsの場合 */}
+            {/* <Emotion /> 　StyledComponentsの場合    ※StoryBookとぶつかったため一時停止中   */    }
+            <TailwindCss /> {/*　Tailwind CSSの場合 */}
         </>
     );
 };

@@ -1,5 +1,12 @@
-/** @jsxImportSource @emotion/react */
+
+
+
+/** @jsxImportSource @emotion/react
+
+/*
 import { jsx, css } from "@emotion/react";
+import styled from "@emotion/styled";
+import { addParameters } from "@storybook/react";
 
 export const Emotion = () => {
     //scssの書き方がそのまま可能な書き方
@@ -21,10 +28,27 @@ export const Emotion = () => {
     });
 
 
+
     return (
         <div css={containerStyle}>
             <p css={titleStyle}>これはEmotionの場合。</p>
-            <button>ボタン</button>
+            <SButton>ボタン</SButton>
         </div>
     );
 };
+
+
+//stylesd-componentsの書き方
+const SButton = styled.button`
+    background-color: #ddd;
+    border:none;
+    padding:8px;
+    border-radius:8px;
+    &:hover{
+        background-color: #aaa;
+        color:#fff;
+        cursor: pointer:
+    }
+    `;
+
+    */
